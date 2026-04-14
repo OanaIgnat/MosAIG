@@ -6,7 +6,7 @@ This repository contains the code and data for our paper:
 > Parth Bhalerao, Oana Ignat, Brian Trinh, Mounika Yalamarty  
 > *ACL Findings 2026*
 
-![Example instance](images/overview2.png)
+![Idea Architecture](images/overview2.png)
 
 ## Overview
 
@@ -23,34 +23,7 @@ Our benchmark contains **9,000 images** spanning:
 
 ## Repository Structure
 
-MosAIG/
-├── Alt/                            # AltDiffusion image generation pipeline
-│   ├── AltDiffusion-m18-Running-Instructions.pdf
-│   ├── BatchImageGenerationAltDiffusion.py
-│   ├── PromptTranslation.py
-│   ├── RunAltExtended.py
-│   ├── main-2.py
-│   └── main-3.py
-├── Flux/                           # FLUX image generation pipeline
-│   ├── BatchImageGenerationFlux.py
-│   └── FluxNotebook.zip
-├── Metrics-Code/                   # Evaluation metrics
-│   ├── Metrics-1.py
-│   ├── Metrics-2.py
-│   ├── Metrics-3.ipynb
-│   └── Metrics-4.ipynb
-├── Multi-Agent-Setup/              # MosAIG multi-agent framework
-│   ├── Final-Multi-V2.py
-│   └── Simple-Crew-Setup.py
-├── Single Agent Hardcoded Prompts/ # Simple baseline
-│   └── SingleHardcoded-Prompts.py
-├── data/                           # Metadata and example data
-│   ├── example_data/
-│   ├── Alt_MultiAgent.xlsx
-│   ├── Alt_Simple.xlsx
-│   ├── Flux_Multiagent.xlsx
-│   └── Flux_Simple.xlsx
-└── images/                         # Arch System Explain
+![Repo Structure](images/Screenshot 2026-04-14 021306.png)
 
 
 ---
