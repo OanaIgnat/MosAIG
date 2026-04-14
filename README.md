@@ -2,11 +2,13 @@
 
 This repository contains the code and data for our paper:
 
-> **"When Cultures Meet: Multicultural Text-to-Image Generation"**  
-> Parth Bhalerao, Oana Ignat, Brian Trinh, Mounika Yalamarty  
+> **"When Cultures Meet: Multicultural Text-to-Image Generation"**
+> Parth Bhalerao, Oana Ignat, Brian Trinh, Mounika Yalamarty
 > *ACL Findings 2026*
 
 ![Idea Architecture](images/overview2.png)
+
+---
 
 ## Overview
 
@@ -23,8 +25,36 @@ Our benchmark contains **9,000 images** spanning:
 
 ## Repository Structure
 
-![Repo Structure](images/Screenshot 2026-04-14 021306.png)
-
+```
+MosAIG/
+├── Alt/                            # AltDiffusion image generation pipeline
+│   ├── AltDiffusion-m18-Running-Instructions.pdf
+│   ├── BatchImageGenerationAltDiffusion.py
+│   ├── PromptTranslation.py
+│   ├── RunAltExtended.py
+│   ├── main-2.py
+│   └── main-3.py
+├── Flux/                           # FLUX image generation pipeline
+│   ├── BatchImageGenerationFlux.py
+│   └── FluxNotebook.zip
+├── Metrics-Code/                   # Evaluation metrics
+│   ├── Metrics-1.py
+│   ├── Metrics-2.py
+│   ├── Metrics-3.ipynb
+│   └── Metrics-4.ipynb
+├── Multi-Agent-Setup/              # MosAIG multi-agent framework
+│   ├── Final-Multi-V2.py
+│   └── Simple-Crew-Setup.py
+├── Single Agent Hardcoded Prompts/ # Simple baseline
+│   └── SingleHardcoded-Prompts.py
+├── data/                           # Metadata and example data
+│   ├── example_data/
+│   ├── Alt_MultiAgent.xlsx
+│   ├── Alt_Simple.xlsx
+│   ├── Flux_Multiagent.xlsx
+│   └── Flux_Simple.xlsx
+└── images/                         # Sample generated images
+```
 
 ---
 
@@ -88,13 +118,13 @@ We evaluate across five dimensions:
 
 ## Requirements
 
-```bash
-pip install crewai
-pip install diffusers transformers accelerate
-pip install torch torchvision
-pip install openai-clip
-pip install pandas openpyxl
-```
+Install the required packages:
+
+    pip install crewai
+    pip install diffusers transformers accelerate
+    pip install torch torchvision
+    pip install openai-clip
+    pip install pandas openpyxl
 
 ---
 
@@ -102,14 +132,12 @@ pip install pandas openpyxl
 
 If you use this work, please cite:
 
-```bibtex
-@inproceedings{bhalerao2026mosaic,
-  title     = {When Cultures Meet: Multicultural Text-to-Image Generation},
-  author    = {Bhalerao, Parth and Ignat, Oana and Trinh, Brian and Yalamarty, Mounika},
-  booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
-  year      = {2026}
-}
-```
+    @inproceedings{bhalerao2026mosaic,
+      title     = {When Cultures Meet: Multicultural Text-to-Image Generation},
+      author    = {Bhalerao, Parth and Ignat, Oana and Trinh, Brian and Yalamarty, Mounika},
+      booktitle = {Findings of the Association for Computational Linguistics: ACL 2026},
+      year      = {2026}
+    }
 
 ---
 
