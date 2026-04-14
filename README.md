@@ -50,6 +50,7 @@ MosAIG/
 │   ├── Alt_Simple.xlsx
 │   ├── Flux_Multiagent.xlsx
 │   └── Flux_Simple.xlsx
+└── images/                         # Arch System Explain
 
 
 ---
